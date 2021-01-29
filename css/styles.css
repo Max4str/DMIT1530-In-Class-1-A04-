@@ -1,0 +1,62 @@
+body {
+    background-color: #e6e6e9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;       /* 62.5% of 16px is 10px so we can now work in ren*/
+}
+
+/** Typographical Scales **/
+h1 {font-size: 4rem}    /*heading 40px*/
+h2 {font-size: 3rem}    /*heading 30px*/
+h3 {font-size: 2.4rem}  /*heading 24px*/
+p {font-size: 1.6rem}   /*16px*/
+
+header {
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #cbcbd1;
+    color: #ff0000;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem;
+}
+
+main,
+footer {
+    padding: 2.4rem;
+}
+
+.col {
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    display: flex;
+    margin: 1rem 0rem;
+    padding: 1rem;
+}
+
+.col img {
+    margin-right: 1rem;
+    width: 40%;
+}
+
+p {
+    padding-bottom: 1.6rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    main h2 {
+        width: 100%;
+    }
+    .col {
+        display: block;
+        width: 32%;
+    }
+    .col img {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
